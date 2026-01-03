@@ -1,0 +1,27 @@
+<h2>{{ id ? 'Edit Employee' : 'Add Employee' }}</h2>
+ <button mat-icon-button (click)="goBack()" aria-label="Back">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+<form [formGroup]="form">
+  <mat-form-field class="full">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Department</mat-label>
+    <input matInput formControlName="department">
+  </mat-form-field>
+
+  <mat-form-field class="full">
+    <mat-label>Role</mat-label>
+    <input matInput formControlName="role">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="save()">Save</button>
+</form>
