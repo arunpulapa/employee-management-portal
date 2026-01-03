@@ -1,0 +1,76 @@
+.dashboard {
+  padding: 10px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.page-heading {
+  margin: 0;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+/* Card */
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+/* Icon box */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box mat-icon {
+  color: #ffffff;
+  font-size: 26px;
+}
+
+/* Text */
+.stat-info h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.stat-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Color variants */
+.blue .icon-box { background: #3b82f6; }
+.green .icon-box { background: #22c55e; }
+.purple .icon-box { background: #8b5cf6; }
+.orange .icon-box { background: #f97316; }

@@ -1,0 +1,93 @@
+/* Page layout */
+.login-page {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Left branding panel */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.brand p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.subtitleleft {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Right login panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f7fa;
+}
+
+/* Login card */
+.login-card {
+  width: 360px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h2 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.login-btn {
+  margin-top: 10px;
+  height: 42px;
+  font-weight: 500;
+}
+
+.error {
+  margin-top: 12px;
+  color: #d32f2f;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .left-panel {
+    display: none;
+  }
+
+  .right-panel {
+    flex: 1;
+  }
+}

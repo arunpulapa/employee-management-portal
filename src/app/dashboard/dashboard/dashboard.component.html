@@ -1,0 +1,52 @@
+<div class="dashboard">
+
+  <div class="header">
+    <h2 class="page-heading">Dashboard</h2>
+    <span class="subtitle">Overview of your organization</span>
+  </div>
+
+  <div class="card-grid">
+
+    <mat-card class="stat-card blue">
+      <div class="icon-box">
+        <mat-icon>groups</mat-icon>
+      </div>
+      <div class="stat-info">
+        <h3>{{ stats['Total Employees'] }}</h3>
+        <p>Total Employees</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card green">
+      <div class="icon-box">
+        <mat-icon>person</mat-icon>
+      </div>
+      <div class="stat-info">
+        <h3>{{ stats['Active Employees'] }}</h3>
+        <p>Active Employees</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card purple">
+      <div class="icon-box">
+        <mat-icon>business</mat-icon>
+      </div>
+      <div class="stat-info">
+        <h3>{{ stats['Departments'] }}</h3>
+        <p>Departments</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card orange">
+      <div class="icon-box">
+        <mat-icon>person_add</mat-icon>
+      </div>
+      <div class="stat-info">
+        <h3>{{ stats['New Joinees'] }}</h3>
+        <p>New Joinees</p>
+      </div>
+    </mat-card>
+
+  </div>
+
+</div>
